@@ -7,4 +7,5 @@ git log
 git pull			//to update local repository from any changes done in the remote repository
 git push
 git remote -v		//to check remote url is linked or not
+git push origin master	//to push all folders at a same time
 		
