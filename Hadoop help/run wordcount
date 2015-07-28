@@ -1,0 +1,17 @@
+To run sample jar files:
+
+//create a file in the local drive
+hduser@timekeeper:~$ nano demo.txt
+
+//copy the file to the HDFS (hadoop distributed file system)
+hduser@timekeeper:~$ hadoop fs -put demo.txt 
+
+//check whether the file is copied or not in the HDFS
+hduser@timekeeper:~$ hadoop fs -ls
+
+//run the sample jar file
+hduser@timekeeper:~$ hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.6.0.jar wordcount demo.txt output
+
+//store the output in the local drive
+hduser@timekeeper:~$ hadoop fs -cat output/part-r-00000 > output.txt
+
