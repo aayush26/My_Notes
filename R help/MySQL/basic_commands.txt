@@ -1,5 +1,5 @@
-con <- dbConnect(MySQL(), user="network_portal", password="monkey2us", dbname=db.name, host="localhost")
-rs <- dbSendQuery(con, "select name from genes limit 10;")
+con <- dbConnect(MySQL(), user="root", password="password", dbname="dbname", host="localhost")
+rs <- dbSendQuery(con, "select * from tablename limit 10;")
 data <- fetch(rs, n=10)
 huh <- dbHasCompleted(rs)
 dbClearResult(rs)
