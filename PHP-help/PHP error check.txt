@@ -1,0 +1,5 @@
+//To check log if PHP is not working
+//Ubuntu 14.04
+
+cd /var/log/apache2
+cat error.log
