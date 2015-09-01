@@ -1,0 +1,24 @@
+Install the first version of R using sudo apt-get install r-base or downloading from 
+https://cran.r-project.org/   -> Software -> R Sources -> here -> R-3 -> download .tar.gz of desired version of 3.x
+
+If downloading manually, follow the instruction given at: 
+https://cran.r-project.org/doc/manuals/r-release/R-admin.html#Obtaining-R
+
+Steps:
+1. ./configure
+2. make
+3. make check
+4. make install
+
+Done.
+
+To install the 2nd version:
+
+1. ./configure --prefix=/usr/local/lib/R_3.2          #path where to store the 2nd version
+2. make
+3. make prefix=/usr/local/lib/R_3.2 install
+
+export PATH=$PATH:/usr/local/lib/R_3.2/bin/
+export PATH=$PATH:/usr/local/lib/R_3.2/bin
+
+ln -s /usr/local/lib/R/bin/R /usr/bin/R3.2            #symbolic link. the script address and /usr/bin/shortcut_name
