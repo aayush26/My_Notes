@@ -1,3 +1,4 @@
+library(RMySQL)
 con <- dbConnect(MySQL(), user="root", password="password", dbname="dbname", host="localhost")
 rs <- dbSendQuery(con, "select * from tablename limit 10;")
 data <- fetch(rs, n=10)
