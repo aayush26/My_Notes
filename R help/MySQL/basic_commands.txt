@@ -1,7 +1,18 @@
 library(RMySQL)
 con <- dbConnect(MySQL(), user="root", password="password", dbname="dbname", host="localhost")
+
+#select
 rs <- dbSendQuery(con, "select * from tablename limit 10;")
 data <- fetch(rs, n=10)
+
+#insert
+#database query
+query <- paste("INSERT INTO Tags (Id, TagName, Count, ExcerptPostId, WikiPostId) VALUES(",Id, ",'" , TagName, "'," ,Count, "," ,ExcerptPostId, "," , WikiPostId, ")")
+for(n in 1:1232){
+dbGetQuery(con, query[n])
+}
+
+#closing 
 huh <- dbHasCompleted(rs)
 dbClearResult(rs)
 dbDisconnect(con)
