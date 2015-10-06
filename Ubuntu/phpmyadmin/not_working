@@ -1,0 +1,3 @@
+//Any change in /etc/apache2 files may cause failure of phpmyadmin
+//Restart the service
+sudo /etc/init.d/apache2 restart
