@@ -1,0 +1,7 @@
+#To check proxy used by apt   
+sudo grep -Hnri proxy /etc/apt/               #output: filename:linenumber:proxy-setting  
+
+#check proxy globally
+grep proxy -i /etc/environment
+
+
