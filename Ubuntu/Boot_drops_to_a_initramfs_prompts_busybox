@@ -1,4 +1,4 @@
-
+LINK: http://askubuntu.com/questions/137655/boot-drops-to-a-initramfs-prompts-busybox
 
 It seems that you have a bad superblock. To fix this:
 
