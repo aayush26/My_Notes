@@ -1,0 +1,5 @@
+#Error shows --with-readline and libX11 headers ....
+./configure --with-readline=no --without-x
+
+#make command not exist
+sudo apt-get install make
