@@ -1,0 +1,1 @@
+val sqlContext = new org.apache.spark.sql.SQLContext(sc)  //enables import sqlContext._
