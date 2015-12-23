@@ -1,0 +1,3 @@
+General problem when node is used instead of nodejs for installation of modules.
+Most likely you need to also sudo apt-get install nodejs-legacy to get the proper symlink for scripts that rely on the binary being node and not nodejs.
+Link: http://stackoverflow.com/questions/26835976/cant-install-bcrypt-for-nodejs-on-ubuntu-14-04-1-x64  
