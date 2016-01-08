@@ -1,0 +1,10 @@
+#list session
+tmux ls
+#kill session name 0
+tmux kill-session -t 0
+#open session 0
+tmux a -t 0
+#detach
+ctrl+b :detach (or) ctrl+b d
+#create new session
+tmux new -s myname
