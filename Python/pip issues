@@ -1,2 +1,5 @@
 # To import pip packages from directory which is not default. In cases of using multiple python or anaconda.  
 import sys; sys.path.insert(0, "/usr/local/lib/python2.7/dist-packages")
+
+# To avoid pip directory issues
+python -m pip install <package_name>
