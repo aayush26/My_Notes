@@ -1,0 +1,6 @@
+# Download mysql jar driver from http://dev.mysql.com/downloads/connector/j/  
+# Copy this java program in <some_directory>\mysql-connector-java-5.1.38\  
+
+# windows
+javac MySqlLoadDriver.java    
+java -cp mysql-connector-java-5.1.38-bin.jar; MySqlLoadDriver    
