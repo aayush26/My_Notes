@@ -1,0 +1,2 @@
+// Clears localStorage of the browser. Successfully working in Firefox ESR 45.4.0  
+localStorage.clear()
